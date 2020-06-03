@@ -1,0 +1,9 @@
+version: '3'
+services:
+    redisapp:
+        image: redis
+    hnapiserverapp:
+        restart: always
+        build: .
+        ports: 
+            - "8080:8080"
